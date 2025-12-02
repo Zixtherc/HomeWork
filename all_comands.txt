@@ -1,0 +1,26 @@
+git clone https://github.com/Zixtherc/HomeWork.git
+cd HomeWork
+code main.cpp
+git status
+git add .
+git status
+git commit -m "Add main.cpp"
+git push
+git checkout -b feature/hello-function
+code hello.h hello.cpp
+code main.cpp
+git add .
+git status
+git commit -m "FEAT: Add hello function"
+git push -u origin feature/hello-function
+git status
+git diff
+git checkout -- main.cpp
+git status
+git checkout main
+git pull 
+git pull feature/hello-function (wrong)
+git pull origin feature/hello-function
+git add .
+git commit -am 'pulled new changes' (wrong)
+git push
